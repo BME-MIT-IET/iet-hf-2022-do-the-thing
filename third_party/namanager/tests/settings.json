@@ -1,0 +1,76 @@
+{
+    "CHECK_DIRS": [
+        "./"
+    ],
+    "INCLUDE_FILES": [
+        ".*"
+    ],
+    "INCLUDE_DIRS": [
+        ".*"
+    ],
+    "IGNORE_FILES": [
+        "/README.md$",
+        ".*\\.md"
+    ],
+    "IGNORE_DIRS": [
+       "^/utility/test",
+       "^/utility"
+    ],
+    "FILE_FORMATS": {
+        "LETTER_CASE": "camel_case",
+        "SEP": ["dash_to_underscore"]
+    },
+    "DIR_FORMATS": {
+        "LETTER_CASE": "upper_case",
+        "SEP": ["dash_to_underscore"]
+    },
+
+    "_comment": {
+        "notes": [
+            "The path separator will be converted automatically in this config, you must always use `/` as path separator",
+            "Priority of INCLUDE_FILES/INCLUDE_DIRS is higher then IGNORE_FILES/IGNORE_DIRS."
+        ],
+        "CHECK_DIRS": {
+            "/path/to/check_dir": "will be root"
+        },
+        "INCLUDE_FILES": {
+            "": ""
+        },
+        "INCLUDE_DIRS": {
+            "": ""
+        },
+        "IGNORE_FILES": {
+            ".*": ["ignore all files, but dirs are not ignore"]
+        },
+        "IGNORE_DIRS": {
+            ".*": {
+                "mean_for": "same as r`.*`, ignore all dirs, but files are not ignore."
+            },
+            "/[^/]+$": {
+                "mean_for": "ignore all dirs in root, but subdirs and files are not ignored."
+            },
+            "/ignored$": {
+                "mean_for": "ignore 'ignored' dir in root, but subdirs and files under the dir will not be ignored."
+            },
+            "ignored": {
+                "mean_for": "ignore all dirs which is consisted with 'ignored' string."
+            },
+            "ignored$":  {
+                "mean_for": "ignore all dirs which ends with 'ignored' string."
+            },
+            ".*^/ignored":  {
+                "mean_for": "ignore all dirs which starts with 'ignored' string."
+            }
+        },
+        "FILE_FORMATS": {
+            "letter_case": ["upper_case", "lower_case", "camel_case", "pascal_case"],
+            "sep": ["dash_to_underscore", "underscore_to_dash"],
+            "abbr": ["convert", "remain"]
+        },
+        "DIR_FORMATS": {
+            "letter_case": ["upper_case", "lower_case", "camel_case", "pascal_case"],
+            "sep": ["dash_to_underscore", "underscore_to_dash"],
+            "abbr": ["convert", "remain"]
+        }
+    }
+}
