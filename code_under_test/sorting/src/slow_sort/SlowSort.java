@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class slow_sort {
+public class SlowSort{
 	/*
 	 * Function that implements the slow sort algorithm
 	 * @param arr[]    Array of elements

@@ -1,7 +1,7 @@
 // Java program to find an element x in a sorted array using Exponential search.
 import java.util.Arrays;
 // Part of Cosmos by OpenGenus Foundation
-class ExponentialSearch {
+public class ExponentialSearch {
    
     // Returns position of first ocurrence of x in array
     static int exponentialSearch(int arr[], int n, int x) {

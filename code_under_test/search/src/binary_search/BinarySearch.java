@@ -1,7 +1,7 @@
 /*
  * Part of Cosmos by OpenGenus Foundation
 */
-class Search
+public class BinarySearch
 {//Implementation of Binary Search in java
     static int recursiveBinarySearch(int arr[], int l, int r, int x)
     {//recursive function that returns the index of element x if it is present in arr[],else returns -1
