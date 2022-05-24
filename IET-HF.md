@@ -10,4 +10,8 @@ A kód mellett a repoban megtalálhatók útmutatók, stílusszabályok, referen
 
 ## Az általunk vizsgált részek
 
-Mi a bitmanipulációkkal foglalkozó kódot vizsgáltuk, ehhez implementáció a `code/bit_manipulation/src` alatt található, tesztek pedig a `code/bit_manipulation/test` mappában.
+Mi a kereső, kiválasztó és rendező algoritmusok közül választunk néhányat tesztelésre, ugyanis ezeknek kézenfekvő a teljesímény-metrikája (futási idő a bemeneti tömb méretétől függően), másrészt ismerünk aszimptotikus becsléseket a futásidejükre, így a gyakorlati viselkedésüket vizsgálni tudjuk.
+
+Az általunk választott nyelv a Java, mivel ehhez tanultunk build és teszt keretrendszer beüzemelését. 
+
+A vizsgált kód elkülönítése érdekében a repo gyökérmappájában létrehoztuk a `code_under_test` mappát, amin belül kialakítjuk a Javára jellemző projektstruktúrát, más nyelven írt forrásfájlok és egyéb zavaró körülmények nélkül.
