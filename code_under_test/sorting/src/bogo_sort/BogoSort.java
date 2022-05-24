@@ -1,4 +1,4 @@
-public class Bogosort {
+public class BogoSort {
     public static void main(String[] args) {
         if (args.length == 1) {
             String[] arr = args[0].split(",");

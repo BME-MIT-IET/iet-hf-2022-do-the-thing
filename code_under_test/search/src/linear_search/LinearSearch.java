@@ -25,7 +25,7 @@ import java.util.Scanner;
  * @author Cosmos by OpenGenus Foundation
  *
  */
-class LinearSearch {
+public class LinearSearch {
     
     /**
      * Searches for key in the given array. Returns the index within this

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/binary_search" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/exponential_search" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/fibonacci_search" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/interpolation_search" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/jump_search" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/linear_search" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ternary_search" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
