@@ -21,7 +21,14 @@ jobs:
       with:
         java-version: '18'
         distribution: 'temurin'
-        cache: maven
+        cache: maven   
+        
+    - name: Cache SonarCloud packages
+      uses: actions/cache@v1
+      with:
+        path: ~/.sonar/cache
+        key: ${{ runner.os }}-sonar
+        restore-keys: ${{ runner.os }}-sonar    
         
     - name: Cache local Maven repository
       uses: actions/cache@v2
@@ -32,4 +39,8 @@ jobs:
           ${{ runner.os }}-maven-
         
     - name: Build with Maven
-      run: mvn -B package --file code_under_test/pom.xml --no-transfer-progress
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: mvn -B verify --file code_under_test/pom.xml org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=BME-MIT-IET_iet-hf-2022-do-the-thing --no-transfer-progress
+
