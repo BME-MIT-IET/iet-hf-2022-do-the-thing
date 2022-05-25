@@ -22,7 +22,7 @@ public class BinarySearch
         return -1; //-1 is returned if the element x is not present in the array
     }
     
-    static int binarySearch(int arr[], int l, int r, int x)
+    public static int binarySearch(int arr[], int l, int r, int x)
     {//Iterative implementation of Binary Search
         while (l <= r) //the loop runs till the low index(l) is less than or equal to the high index(r)
         {
