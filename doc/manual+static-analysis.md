@@ -34,8 +34,8 @@ Ezek közül egy castolással kapcsolatos bug-ot javítottunk ki, valamint egy f
 
 ## Eredmény
 
-A projektünk egy teljesen működő maven projekt lett.
+Néhány talált hibát kijavítottunk, a statikus elemző a jövőbeli fejlesztések során is sokat segíthet.
 
 ## Tanulság
 
-A github merge-ölési algoritmusa meglepően okos volt, mert különböző ágon változtattuk ugynazazt a fájl-t és semmi hiba nélkül működött a merge mert nem volt ütközés a változtatásokban.
+A statikus elemző eszközök nagy mértékben meg tudják könnyíteni a munkát.
