@@ -1,3 +1,5 @@
+package selection_sort;
+
 /**
  * Utility class for sorting an array using Selection Sort algorithm. Selection
  * Sort is a basic algorithm for sorting with O(n^2) time complexity. Basic idea

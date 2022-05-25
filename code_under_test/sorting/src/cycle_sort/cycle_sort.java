@@ -1,8 +1,6 @@
-// Java program to impleament cycle sort
+package cycle_sort;// Java program to impleament cycle sort
 // Part of Cosmos by OpenGenus Foundation
-import java.util.*;
-import java.lang.*;
- 
+
 class CycleSort
 {
 // Function sort the array using Cycle sort

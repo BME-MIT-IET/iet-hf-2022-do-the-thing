@@ -1,3 +1,5 @@
+package quick_sort;
+
 // Part of Cosmos by OpenGenus Foundation
 class QuickSort {
 	int partition(int arr[], int low, int high) {

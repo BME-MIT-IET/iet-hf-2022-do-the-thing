@@ -1,3 +1,5 @@
+package cocktail_sort;
+
 class CocktailSort {
     /** A method to sort the array. The array will be sorted inplace. 
     * @author KanakalathaVemuru (https://github.com/KanakalathaVemuru)

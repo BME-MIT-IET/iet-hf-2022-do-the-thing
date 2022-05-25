@@ -1,3 +1,5 @@
+package counting_sort;
+
 // Java implementation of Counting Sort
 // Part of Cosmos by OpenGenus Foundation
 class CountingSort {

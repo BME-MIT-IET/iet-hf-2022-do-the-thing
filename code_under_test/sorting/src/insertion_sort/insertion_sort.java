@@ -1,3 +1,7 @@
+package insertion_sort;
+
+import java.util.Arrays;
+
 // Part of Cosmos by OpenGenus Foundation
 class InsertionSort {       
     void sort(int arr[]) {      // sort() performs the insertion sort on the array which is passed as argument from main() 

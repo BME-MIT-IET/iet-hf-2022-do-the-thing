@@ -1,3 +1,5 @@
+package slow_sort;
+
 import java.util.Arrays;
 
 public class slow_sort {
