@@ -1,4 +1,4 @@
-package bead_sort;
+package slow_sort;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -10,26 +10,26 @@ import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static sort_array.ArraySorter.*;
 
-class BeadSortTest {
-    private static BeadSort bds = new BeadSort();
+class slow_sortTest {
+    private static slow_sort sls = new slow_sort();
     private int[] array;
     private static final int[] values = {100,1000,10000};
     private static ArrayList<Long> performance = new ArrayList<>();
 
     @BeforeAll
     public static void introduction() {
-        System.out.println(bds.getClass().getName());
+        System.out.println(sls.getClass().getName());
     }
 
     @ParameterizedTest
     @ValueSource(ints = {100,1000,10000})
-    void beadSort_inc(int length) {
+    void slowSort_inc(int length) {
         System.out.println("Sorted array, " + length + " element");
         int[] sol = inc(new int[length]);
         array = inc(new int[length]);
 
         long startTime = System.nanoTime();
-        array = bds.beadSort(array);
+        sls.slowSort(array,0,length-1);
         long endTime = System.nanoTime();
 
         performance.add(endTime - startTime);
@@ -39,13 +39,13 @@ class BeadSortTest {
 
     @ParameterizedTest
     @ValueSource(ints = {100,1000,10000})
-    void beadSort_desc(int length) {
+    void slowSort_desc(int length) {
         System.out.println("Desc array, " + length + " element");
         int[] sol = inc(new int[length]);
         array = desc(new int[length]);
 
         long startTime = System.nanoTime();
-        array = bds.beadSort(array);
+        sls.slowSort(array,0,length-1);
         long endTime = System.nanoTime();
 
         performance.add(endTime - startTime);
@@ -55,13 +55,13 @@ class BeadSortTest {
 
     @ParameterizedTest
     @ValueSource(ints = {100,1000,10000})
-    void beadSort_rand(int length) {
+    void slowSort_rand(int length) {
         System.out.println("Random array, " + length + " element");
         int[] sol = inc(new int[length]);
         array = rand(new int[length]);
 
         long startTime = System.nanoTime();
-        array = bds.beadSort(array);
+        sls.slowSort(array,0,length-1);
         long endTime = System.nanoTime();
 
         performance.add(endTime - startTime);
