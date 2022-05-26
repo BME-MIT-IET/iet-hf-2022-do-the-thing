@@ -160,13 +160,5 @@ public class ExploratoryTest {
             case 5 -> testJumpSearch(n, arr, toFind);
             default -> testLinearSearch(n, arr, toFind);
         }
-        // Fail: fibonacci
-        // Input:
-        // (9, 3, 2, 1, 4, 6, 8, 5, 4, 7), toFind = 78
-        // Stack trace:
-        // Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
-        //	at search.fibonacci_search.FibonacciSearch.find(FibonacciSearch.java:52)
-        //	at ExploratoryTest.testFibonacciSearch(ExploratoryTest.java:96)
-        //	at ExploratoryTest.main(ExploratoryTest.java:158)
     }
 }
