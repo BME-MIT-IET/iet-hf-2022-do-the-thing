@@ -1,11 +1,8 @@
 package search.interpolation_search;
 
 public class Interpolation {
-
-	    static int arr[] = new int[]{10, 12, 13, 15, 17, 19, 20, 21, 22, 23,
-	                                         24, 33, 35, 42, 49};
 	     
-	public  static int interpolationSearch(int x)
+	public  static int interpolationSearch(int[] arr, int x)
 	    {
 	        // Find indexes of two corners
 	        int lo = 0, hi = (arr.length - 1);
@@ -31,8 +28,9 @@ public class Interpolation {
 	   
 	    public static void main(String[] args) 
 	    {
-	         int x = 20; 
-	         int index = interpolationSearch(x);
+	         int x = 20;
+			 int[] arr = new int[]{10, 12, 13, 15, 17, 19, 20, 21, 22, 23, 24, 33, 35, 42, 49};
+	         int index = interpolationSearch(arr, x);
 	          
 	         // If element was found
 	         if (index != -1)
